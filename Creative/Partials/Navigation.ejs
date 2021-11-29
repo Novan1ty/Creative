@@ -1,0 +1,13 @@
+<div class="Header"></div>
+<nav>
+    <div class="Navigation-Links">
+        <a class="Route" href="/"><p>Creative</p></a>
+        <% for (const Route of Routes) { %>
+            <a class="Route" href="<%- Route %>">
+                <p>
+                    <%- Route[1].toUpperCase() + Route.slice(2) %>
+                </p>
+            </a>
+        <% } %>
+    </div>
+</nav>

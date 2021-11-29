@@ -1,0 +1,40 @@
+{
+  "files": {
+    "Creative/Character/Add-Character.ejs": [
+      {
+        "id": "86d8433f-8965-4588-9580-13b2df03537c",
+        "line": 1,
+        "version": 129,
+        "index": 0
+      }
+    ],
+    "Creative/Character/Edit-Character.ejs": [
+      {
+        "id": "c00b78fe-c43d-4fae-9477-275cba8dfef1",
+        "line": 1,
+        "version": 391,
+        "index": 0
+      },
+      {
+        "id": "a1cbf3ee-4712-490a-9fc9-5916d24944cc",
+        "line": 61,
+        "version": 391,
+        "index": 1934
+      }
+    ],
+    "Creative/style.css": [
+      {
+        "id": "6b81cf3a-7c69-494a-8aa9-a088d2b85b1a",
+        "line": 32,
+        "version": 5925,
+        "index": 486
+      },
+      {
+        "id": "1152755f-293f-4173-a9fe-4fd1a812f9c1",
+        "line": 162,
+        "version": 5925,
+        "index": 2945
+      }
+    ]
+  }
+}

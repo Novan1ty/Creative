@@ -1,0 +1,19 @@
+<%- include('../Partials/Header.ejs') %>
+<%- include('../Partials/Navigation.ejs', { Routes: Routes }) %>
+<div class="Character">
+    <h1><%- Character.Name %></h1>
+    <p>ID: <%- Character.ID %></p>
+    <div>
+        <% if (Character.Fields) { %>
+            <% for (const Field of Character.Fields) { %>
+                <div>
+                    <p><%- Field.Label %></p>
+                    <p><%- Field.Value %></p>
+                </div>
+            <% } %>
+        <% } else { %>
+            <p>No Fields Yet.</p>
+        <% } %>
+    </div>
+</div>
+<%- include('../Partials/Footer.ejs') %>

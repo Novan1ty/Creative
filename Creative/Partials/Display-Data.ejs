@@ -1,0 +1,17 @@
+<div class="Data-Types">
+    <% for (const Data of Page_Data) { %>
+        <div class="Data">
+            <p class="Name"><%- Data.Name %></p>
+            <%-
+                include(
+                    './Action-Buttons.ejs',
+                    {
+                        Name: Data.Name,
+                        ID: Data.ID,
+                        Route: Route
+                    }
+                ) 
+            %>
+        </div>
+    <% } %>
+</div>

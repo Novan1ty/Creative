@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Creative</title>   
+        <meta name="viewport" content="width=device-width">
+        <link href="/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <%- include('./Partials/Navigation.ejs', { Routes: Routes }) %>
+        <div class="Data-Container Routes">
+            <div class="Data-Types">
+                <% for (const Route of Routes) { %>
+                    <div class="Data">
+                        <p class="Name">
+                            <%- Route[1].toUpperCase() + Route.slice(2) %>
+                        </p>
+                        <a
+                            class="Btn Btn-Primary"
+                            href="<%- Route %>"
+                        >Add</a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </body>
+</html>

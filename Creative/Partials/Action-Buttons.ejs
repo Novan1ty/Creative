@@ -1,0 +1,16 @@
+<div class="Action-Container">
+    <a
+        class="Btn Btn-Primary"
+        href="/<%- Route %>/edit/<%- ID %>"
+    >Edit</a>
+    <a
+        class="Btn Btn-Primary"
+        href="/<%- Route %>/<%- ID %>"
+    >View</a>
+    <form
+        method="POST"
+        action="/<%- Route %>/remove/<%- ID %>?_method=DELETE"
+    >
+        <input type="submit" value="Remove" class="Btn Btn-Danger">
+    </form>
+</div>

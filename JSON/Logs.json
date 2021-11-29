@@ -1,0 +1,21 @@
+[
+    ":name",
+    "",
+    null,
+    null,
+    null,
+    null,
+    {},
+    "Mitch",
+    "Mitch",
+    {
+        "Name": "Mitch",
+        "ID": 1636087114245
+    },
+    "Character.find({ ID: 1636087114245 })",
+    null,
+    null,
+    1636087114245,
+    1636088654396,
+    1636088654396
+]

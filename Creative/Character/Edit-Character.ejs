@@ -1,0 +1,61 @@
+<%- include('../Partials/Header.ejs') %>
+<%- include('../Partials/Navigation.ejs', { Routes: Routes }) %>
+<div class="Edit-Form">
+    <form
+        class="Edit"
+        method="POST"
+        action="/characters/edit/<%- Character.ID %>?_method=PATCH"
+        autocomplete="off"
+    >
+        <input
+            class="Name-Input"
+            name="Name"
+            type="text"
+            value="<%- Character.Name %>"
+        >
+        <input
+            class="Btn Btn-Primary"
+            type="submit"
+            value="Save"
+        >
+    </form>
+    <div class="Field-Form">
+        <div class="Field-Container">
+            <% if (Character.Fields) { %>
+                <% for (const Field of Character.Fields) { %>
+                    <div class="Field-Item">
+                        <p><%- Field.Label %></p>
+                    </div>
+                    <div class="Field-Item">
+                        <p><%- Field.Value %></p>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+        <form
+            class="Data-Field Edit-Field"
+            method="POST"
+            action="/characters/edit/<%- Character.ID %>"
+            autocomplete="off"
+        >
+            <input
+                class="Label-Input"
+                name="Label"
+                type="text"
+                required
+            >
+            <input
+                class="Value-Input"
+                name="Value" 
+                type="text"
+                required
+            >
+            <input
+                class="Btn Btn-Primary"
+                type="submit"
+                value="Add"
+            >
+        </form>
+    </div>
+</div>
+<%- include('../Partials/Footer.ejs') %>

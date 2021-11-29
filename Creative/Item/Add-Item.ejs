@@ -1,0 +1,31 @@
+<%- include('../Partials/Header.ejs') %>
+<%- include('../Partials/Navigation.ejs', { Routes: Routes }) %>
+<div>
+    <form
+        class="Add"
+        method="POST"
+        action="/<%- Route %>/new"
+        autocomplete="off"
+    >
+        <input
+            name="Name"
+            type="text"
+            placeholder="(e.g. Energy Bracelet)"
+        >
+        <input
+            class="Btn Btn-Primary"
+            type="submit"
+            value="Add Item"
+        >
+    </form>
+</div>
+
+<section class="Data-Container">
+    <%-
+        include(
+            '../Partials/Display-Data.ejs',
+            { Page_Data: Data, Route: Route }
+        )
+    %>
+</section>
+<%- include('../Partials/Footer.ejs') %>
